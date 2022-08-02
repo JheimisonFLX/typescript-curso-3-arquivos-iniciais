@@ -17,7 +17,7 @@ export abstract class View<T> {
             this.escapar = escapar;
         }
     }
-    @inspect()
+    @inspect
     @logarTempoDeExecução()
     public update(model: T): void {
         let template = this.template(model);
