@@ -52,6 +52,10 @@ export class NegociacaoController {
             && data.getDay() < DiasDaSemana.SABADO;
     }
 
+    importaDados(): void{
+        alert('oi');
+    }
+    
     private limparFormulario(): void {
         this.inputData.value = '';
         this.inputQuantidade.value = '';

@@ -34,6 +34,9 @@ export class NegociacaoController {
         return data.getDay() > DiasDaSemana.DOMINGO
             && data.getDay() < DiasDaSemana.SABADO;
     }
+    importaDados() {
+        alert('oi');
+    }
     limparFormulario() {
         this.inputData.value = '';
         this.inputQuantidade.value = '';
