@@ -21,17 +21,11 @@ export class NegociacaoController {
     private negociacoesService = new NegociacoesService();
 
     constructor() {
-        // this.inputData = <HTMLInputElement>document.querySelector('#data');
-        // this.inputQuantidade = document.querySelector('#quantidade') as HTMLInputElement;
-        // this.inputValor = document.querySelector('#valor') as HTMLInputElement;
         this.negociacoesView.update(this.negociacoes);
     }
     @inspect
     @logarTempoDeExecução()
     public adiciona(): void {
-        /*
-            Zé, você já viu isso?
-        */
         const negociacao = Negociacao.criaDe(
             this.inputData.value,
             this.inputQuantidade.value,
