@@ -39,6 +39,8 @@ export class NegociacaoController {
         }
 
         this.negociacoes.adiciona(negociacao);
+        console.log(negociacao.paraTexto())
+        console.log(this.negociacoes.paraTexto())
         this.limparFormulario();
         this.atualizaView();
     }
@@ -49,7 +51,6 @@ export class NegociacaoController {
     }
 
     importaDados(): void {
-
 
         this.negociacoesService.obterNegociacoesDoDia()
             .then(negociacoesDeHoje => {
